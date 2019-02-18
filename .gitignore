@@ -1,0 +1,12 @@
+_site
+node_modules
+npm-debug.log
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+*.sh
+
+.idea/duanyajuzi.github.io.iml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/vcs.xml
