@@ -3,7 +3,7 @@ title: Jarvis's Blog
 SEOTitle: Jarvis的博客 - Jarvis Blog
 header-img: img/home-bg.jpg
 email: duanyajuzi@outlook.com
-description: "奋斗小孩子 - jarvis，tech Lover - 这里是 @jarvis 的个人博客，与你一起。"
+description: " - jarvis，tech Lover - 这里是 @jarvis 的个人博客，与你一起。"
 keyword: "jarvis, @jarvis_dev, duanyajuzi, @duanyajuzi"
 url: "http://duanyajuzi.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -60,12 +60,6 @@ maruku:
 # Disqus settings
 #disqus_username: _your_disqus_short_name_
 
-# Duoshuo settings
-duoshuo_username: duanyajuzi
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
-
 
 
 # Analytics settings
@@ -73,7 +67,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 ba_track_id: 04a5dc85a658b1b97e4afff0f7e44936
 # Google Analytics
 #ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-#ga_domain: huangxuan.me
+
 
 
 
