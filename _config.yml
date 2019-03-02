@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: duanyajuzi@outlook.com
 description: " - jarvis，tech Lover - 这里是 @jarvis 的个人博客，与你一起。"
 keyword: "jarvis, @jarvis_dev, duanyajuzi, @duanyajuzi"
-url: "http://duanyajuzi.com"              # your host, for absolute URL
+url: "https://duanyajuzi.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
