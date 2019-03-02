@@ -12,9 +12,15 @@ author: jarvis
 
 # SNS settings
 RSS: true
+<<<<<<< Updated upstream
 weibo_username:     5897971583
 #zhihu_username:
 jianshu_username: duanyajuzi
+=======
+#weibo_username:     5897971583
+#zhihu_username:
+#jianshu_username: 
+>>>>>>> Stashed changes
 github_username: duanyajuzi
 #mail_username: duanyajuzi@outlook.com
 # linkedin_username:  firstname-lastname-idxxxx

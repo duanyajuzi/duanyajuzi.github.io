@@ -12,7 +12,10 @@ layout: default
         position: relative;
         background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
     }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     {% if page.header-mask %}
     header.intro-header .header-mask{
         width: 100%;
@@ -58,6 +61,7 @@ layout: default
                 col-md-10 col-md-offset-1
                 post-container">
 
+<<<<<<< Updated upstream
 				{{ content }}
 
                 <hr>
@@ -88,6 +92,20 @@ layout: default
                 <!-- 多说 Share end-->
                 {% endif %}
 
+=======
+                <!-- Multi-Lingual -->
+                {% if page.multilingual %}
+                <!-- Language Selector -->
+                <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+                    <option value="0" selected> 中文 Chinese </option>
+                    <option value="1"> 英文 English </option>
+                </select>
+                {% endif %}
+
+				{{ content }}
+
+                <hr style="visibility: hidden;">
+>>>>>>> Stashed changes
 
                 <ul class="pager">
                     {% if page.previous.url %}
@@ -109,6 +127,7 @@ layout: default
                 </ul>
 
 
+<<<<<<< Updated upstream
                 {% if site.duoshuo_username %}
                 <!-- 多说评论框 start -->
                 <div class="comment">
@@ -121,6 +140,8 @@ layout: default
                 <!-- 多说评论框 end -->
                 {% endif %}
 
+=======
+>>>>>>> Stashed changes
                 {% if site.disqus_username %}
                 <!-- disqus 评论框 start -->
                 <div class="comment">
@@ -129,7 +150,16 @@ layout: default
                 <!-- disqus 评论框 end -->
                 {% endif %}
 
+<<<<<<< Updated upstream
             </div>
+=======
+                {% if site.netease_comment %}
+                <!-- 网易云跟帖 评论框 start -->
+                <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+                <!-- 网易云跟帖 评论框 end -->
+                {% endif %}
+            </div>  
+>>>>>>> Stashed changes
 
     <!-- Side Catalog Container -->
         {% if page.catalog %}
@@ -177,7 +207,11 @@ layout: default
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
                     {% for friend in site.friends %}
+<<<<<<< Updated upstream
                         <li><a target="_blank" href="{{friend.href}}">{{friend.title}}</a></li>
+=======
+                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
+>>>>>>> Stashed changes
                     {% endfor %}
                 </ul>
                 {% endif %}
@@ -187,6 +221,7 @@ layout: default
 </article>
 
 
+<<<<<<< Updated upstream
 {% if site.duoshuo_username %}
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
@@ -205,6 +240,22 @@ layout: default
     })();
 </script>
 <!-- 多说公共JS代码 end -->
+=======
+{% if site.netease_comment %}
+<!-- 网易云跟帖JS代码 start -->
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+<script>
+  var cloudTieConfig = {
+    url: document.location.href, 
+    sourceId: "",
+    productKey: "de25fc98a6fe48b3bc8a7ae765da99a0",
+    target: "cloud-tie-wrapper"
+  };
+  var yunManualLoad = true;
+  Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+</script>
+<!-- 网易云跟帖JS代码 end -->
+>>>>>>> Stashed changes
 {% endif %}
 
 
@@ -215,7 +266,10 @@ layout: default
     var disqus_shortname = "{{site.disqus_username}}";
     var disqus_identifier = "{{page.id}}";
     var disqus_url = "{{site.url}}{{page.url}}";
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
@@ -240,7 +294,11 @@ layout: default
 </script>
 <!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
 <script>
+<<<<<<< Updated upstream
     async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+=======
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+>>>>>>> Stashed changes
         anchors.options = {
           visible: 'always',
           placement: 'right',
@@ -249,7 +307,10 @@ layout: default
         anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
     })
 </script>
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 <style>
     /* place left on bigger screen */
     @media all and (min-width: 800px) {
@@ -261,4 +322,8 @@ layout: default
         }
     }
 </style>
+<<<<<<< Updated upstream
 {% endif %}
+=======
+{% endif %}
+>>>>>>> Stashed changes
